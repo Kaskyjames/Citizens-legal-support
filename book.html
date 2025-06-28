@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Consultation | Citizens' Legal Support</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">⚖️ Citizens' Legal Support</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book.html" class="active">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Booking Form -->
+  <section class="hero">
+    <h1>Book a Free Legal Consultation</h1>
+    <p>Fill in your details below and we'll reach out shortly to schedule your session.</p>
+  </section>
+
+  <section class="services-preview">
+    <form action="#" method="post" class="booking-form">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="date">Preferred Date:</label><br />
+      <input type="date" id="date" name="date" /><br />
+
+      <label for="message">Brief Description:</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea><br />
+
+      <button type="submit" class="cta-button">Request Appointment</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Citizens' Legal Support | Justice. Access. Empowerment.</p>
+  </footer>
+
+</body>
+</html>
