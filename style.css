@@ -1,1 +1,121 @@
 
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fefefe;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f6c900;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: #fff6d6;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.cta-button {
+  background: #f6c900;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #dab100;
+}
+
+/* Services Preview */
+.services-preview {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.services-preview h2 {
+  margin-bottom: 1rem;
+}
+
+.services-preview ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.services-preview li {
+  padding: 0.3rem 0;
+  font-weight: 500;
+}
+
+.link-button {
+  text-decoration: none;
+  color: #fff;
+  background: #222;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.link-button:hover {
+  background: #444;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  font-size: 0.9rem;
+}
