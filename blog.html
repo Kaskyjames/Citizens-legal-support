@@ -3,8 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Legal Resources | Citizens' Legal Support</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Legal Blog | Citizens' Legal Support</title>
+  <link rel="stylesheet" href="style-upgrade.css" />
+  <style>
+    .blog-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .blog-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .blog-post {
+      background: #fff;
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-post h3 {
+      font-family: 'Lora', serif;
+      margin-bottom: 0.6rem;
+    }
+
+    .blog-post p {
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: #f6c900;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
@@ -25,19 +74,37 @@
 
   <!-- Blog Header -->
   <section class="hero">
-    <h1>Legal Tips & Resources</h1>
-    <p>Stay informed with the latest guides and news about Social Security, disability, and public legal assistance.</p>
+    <h1>Legal Knowledge & Updates</h1>
+    <p>Stay informed with practical legal tips, guides, and benefit updates for everyday citizens.</p>
   </section>
 
   <!-- Blog Posts -->
-  <section class="services-preview">
-    <h2>Coming Soon</h2>
-    <ul>
-      <li><strong>How to Apply for Social Security Benefits</strong> – Step-by-step walkthrough</li>
-      <li><strong>Denied a Claim?</strong> – Understanding the appeals process</li>
-      <li><strong>Your Rights as a Veteran</strong> – Legal coverage explained</li>
-    </ul>
-    <p>We’ll be updating this page regularly with helpful legal content.</p>
+  <section class="services-preview blog-cards">
+
+    <div class="blog-post">
+      <h3>🧾 How to Apply for Disability Benefits</h3>
+      <p>Everything you need to know before filing for SSDI/SSI — documents, timelines, and common pitfalls.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>🚫 What to Do If Your Claim Is Denied</h3>
+      <p>Understand appeal deadlines and how to strengthen your case for Social Security or veteran benefit denials.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>🏠 Rental Assistance Programs in 2025</h3>
+      <p>Explore how to apply for government rental help and housing legal aid, especially in California.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>💼 Know Your Legal Rights as a Veteran</h3>
+      <p>Free legal resources and organizations veterans can use to get support for medical, financial, and service-related issues.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+
   </section>
 
   <!-- Footer -->
