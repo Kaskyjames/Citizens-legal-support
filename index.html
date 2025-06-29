@@ -116,6 +116,36 @@
   “Justice delayed is justice denied. We fight to make justice happen — quickly, clearly, and fairly.”
 </section>
 
+  <!-- Testimonials Section -->
+<section class="services-preview" data-aos="fade-up">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-slider" id="testimonial-slider">
+    <div class="testimonial active">
+      <p>“I was denied disability benefits for years. Citizens' Legal Support got me approved in 2 months. Truly life-saving.”</p>
+      <strong>– Maria W., California</strong>
+    </div>
+    <div class="testimonial">
+      <p>“They handled my veterans’ case like pros. I’m now receiving monthly compensation without stress.”</p>
+      <strong>– Jack T., U.S. Veteran</strong>
+    </div>
+    <div class="testimonial">
+      <p>“Clear, honest, and fast. I couldn’t believe legal help could be this accessible.”</p>
+      <strong>– Darnell P., New York</strong>
+    </div>
+  </div>
+</section>
+
+<!-- Trusted By Section -->
+<section class="services-preview" data-aos="fade-up">
+  <h2>Trusted by Clients & Institutions</h2>
+  <div class="trust-logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Better_Business_Bureau_logo.svg/512px-Better_Business_Bureau_logo.svg.png" alt="BBB" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/US_Department_of_Veterans_Affairs_logo.svg/512px-US_Department_of_Veterans_Affairs_logo.svg.png" alt="VA" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/US-SocialSecurityAdmin-Logo.svg/512px-US-SocialSecurityAdmin-Logo.svg.png" alt="SSA" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/HUD_Seal.svg/512px-HUD_Seal.svg.png" alt="HUD" />
+  </div>
+</section>
+  
 <!-- Footer -->
 <footer class="footer">
   <p>&copy; 2025 Citizens' Legal Support | Protecting Your Access to Justice</p>
@@ -126,5 +156,15 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({ duration: 1000 });</script>
 
+  <script>
+  const testimonials = document.querySelectorAll('.testimonial');
+  let index = 0;
+
+  setInterval(() => {
+    testimonials.forEach(t => t.classList.remove('active'));
+    index = (index + 1) % testimonials.length;
+    testimonials[index].classList.add('active');
+  }, 5000);
+  </script>
 </body>
 </html>
