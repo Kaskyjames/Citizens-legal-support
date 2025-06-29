@@ -253,7 +253,7 @@ section {
 
 .hero.hero-image {
   position: relative;
-  background-image: url('assets/hero-bgi.jpg');
+  background-image: url('assets/herobg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
