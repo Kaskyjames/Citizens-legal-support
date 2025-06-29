@@ -269,7 +269,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(15, 15, 15, 0.6); /* dark overlay */
+  background: rgba(15, 15, 15, 0.6); /* white overlay */
   z-index: 0;
 }
 
