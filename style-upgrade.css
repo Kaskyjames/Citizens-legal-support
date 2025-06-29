@@ -302,4 +302,54 @@ section {
   border-radius: 6px;
 }
 
+.disclaimer-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fffdf6;
+  color: #222;
+  border-left: 4px solid #f6c900;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.8;
+  font-size: 1rem;
+}
 
+.disclaimer-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+  border-bottom: 2px solid #f6c900;
+  padding-bottom: 0.5rem;
+}
+
+.disclaimer-section h2 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.disclaimer-section p {
+  margin: 1rem 0;
+}
+
+.disclaimer-section a {
+  color: #f6c900;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .disclaimer-section {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .disclaimer-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .disclaimer-section h2 {
+    font-size: 1.2rem;
+  }
+}
