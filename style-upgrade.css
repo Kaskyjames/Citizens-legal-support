@@ -146,16 +146,6 @@ section {
   outline: none;
 }
 
-/* === Footer === */
-.footer {
-  background: #111;
-  color: #ccc;
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
 .testimonial-slider {
   position: relative;
   max-width: 700px;
@@ -293,3 +283,23 @@ section {
   color: #ffffff;         /* pure white text */
   font-weight: 600;       /* make it thicker */
 }
+
+/* === Footer === */
+.footer {
+  background: #111;
+  color: #ccc;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.6;
+
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+
