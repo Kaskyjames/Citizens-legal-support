@@ -3,8 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | Citizens' Legal Support</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Contact | Citizens' Legal Support</title>
+  <link rel="stylesheet" href="style-upgrade.css" />
+  <style>
+    .contact-columns {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .contact-columns {
+        flex-direction: row;
+      }
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1rem;
+    }
+
+    .contact-info li {
+      margin-bottom: 1.2rem;
+      color: #444;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,44 +54,61 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="book.html">Book</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contact Section -->
+  <!-- Hero -->
   <section class="hero">
-    <h1>Contact Citizens' Legal Support</h1>
-    <p>We’re here to help — reach us by email, WhatsApp, or submit a message directly.</p>
+    <h1>Contact Us</h1>
+    <p>Reach out via WhatsApp, email, or by submitting the message form below.</p>
   </section>
 
-  <section class="services-preview">
-    <h2>Contact Details</h2>
-    <ul>
-      <li><strong>Email:</strong> support@citizenslegalsupport.com</li>
-      <li><strong>WhatsApp:</strong> <a href="https://wa.me/14075551234" target="_blank">+1 (407) 555-1234</a></li>
-      <li><strong>Location:</strong> California, United States  
-        <br/><a href="https://maps.google.com" target="_blank">View on Google Maps</a>
-      </li>
-    </ul>
+  <!-- Contact Section -->
+  <section class="services-preview contact-columns">
 
-    <h2>Send Us a Message</h2>
-    <form action="#" method="post" class="booking-form">
-      <label for="name">Your Name:</label><br />
-      <input type="text" id="name" name="name" required /><br />
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:support@citizenslegalsupport.com">support@citizenslegalsupport.com</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/14075551234" target="_blank">+1 (407) 555-1234</a></li>
+        <li><strong>Location:</strong> California, United States</li>
+      </ul>
 
-      <label for="email">Your Email:</label><br />
-      <input type="email" id="email" name="email" required /><br />
+      <!-- Optional Map -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26418.150543729095!2d-118.2436843!3d34.0522342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b1e16d08ab%3A0xf4f0a4dc0c1e1cf1!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1719594468824!5m2!1sen!2sus" 
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
 
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="4" required></textarea><br />
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="#" method="post" class="booking-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
 
-      <button type="submit" class="cta-button">Send Message</button>
-    </form>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </div>
+
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Citizens' Legal Support | We Listen. We Support. We Act.</p>
+    <p>&copy; 2025 Citizens' Legal Support | Your Rights. Our Fight.</p>
   </footer>
 
 </body>
