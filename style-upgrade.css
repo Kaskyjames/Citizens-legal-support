@@ -155,3 +155,48 @@ section {
   font-size: 0.9rem;
   margin-top: 4rem;
 }
+
+.testimonial-slider {
+  position: relative;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.testimonial {
+  display: none;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.trust-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.trust-logos img {
+  max-height: 60px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  filter: grayscale(100%);
+}
+
+.trust-logos img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
