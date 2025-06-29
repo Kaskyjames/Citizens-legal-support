@@ -4,7 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Services | Citizens' Legal Support</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-upgrade.css" />
+  <style>
+    .cards-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      font-family: 'Lora', serif;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+    }
+
+    .service-card p {
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,31 +55,55 @@
         <li><a href="services.html" class="active">Services</a></li>
         <li><a href="book.html">Book</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Services Section -->
+  <!-- Services Overview -->
   <section class="hero">
     <h1>Our Legal Services</h1>
-    <p>We support individuals and families in securing their rightful government benefits with care, precision, and legal expertise.</p>
+    <p>Expert legal assistance for individuals applying for U.S. public benefits and government support programs.</p>
   </section>
 
   <section class="services-preview">
-    <h2>What We Offer</h2>
-    <ul>
-      <li><strong>Social Security & Disability Claims</strong><br/>Guidance and filing support for SSDI and SSI claims.</li>
-      <li><strong>Veterans’ Benefits Assistance</strong><br/>Help with VA claims, appeals, and denied benefits.</li>
-      <li><strong>Public Assistance & Welfare Programs</strong><br/>Legal help with food stamps, Medicaid, housing aid, and more.</li>
-      <li><strong>Appeals & Disputes</strong><br/>We stand with you when benefits are unfairly denied or delayed.</li>
-      <li><strong>Case Review & Legal Coaching</strong><br/>We review your case documents and provide simple, legal coaching.</li>
-    </ul>
-    <a href="book.html" class="cta-button">Book a Free Consultation</a>
+    <div class="cards-container">
+
+      <div class="service-card">
+        <h3>🧑‍⚖️ Disability & SSI Claims</h3>
+        <p>End-to-end guidance for Social Security Disability (SSDI/SSI) applications, including filing and appeals.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🎖️ Veterans' Legal Aid</h3>
+        <p>Comprehensive support for VA claims, benefits disputes, and documentation assistance for U.S. veterans.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🏠 Housing & Public Assistance</h3>
+        <p>We help you apply and resolve issues with housing benefits, Medicaid, food aid, and general relief programs.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>📄 Appeals & Denials</h3>
+        <p>Denied benefits? We handle administrative appeals and ensure fair review of your claim or application.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>📞 Case Review & Coaching</h3>
+        <p>We review your paperwork, guide you step-by-step, and prepare you to handle legal processes confidently.</p>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="book.html" class="cta-button">Book a Free Consultation</a>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Citizens' Legal Support | All rights reserved.</p>
+    <p>&copy; 2025 Citizens' Legal Support | Clear. Accessible. Legal.</p>
   </footer>
 
 </body>
