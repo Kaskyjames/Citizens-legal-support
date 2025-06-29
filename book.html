@@ -3,8 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book Consultation | Citizens' Legal Support</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Book a Consultation | Citizens' Legal Support</title>
+  <link rel="stylesheet" href="style-upgrade.css" />
+  <style>
+    .form-section {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .form-section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .form-section p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .booking-form label {
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,37 +39,38 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="book.html" class="active">Book</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Booking Form -->
+  <!-- Booking Form Section -->
   <section class="hero">
-    <h1>Book a Free Legal Consultation</h1>
-    <p>Fill in your details below and we'll reach out shortly to schedule your session.</p>
+    <h1>Free Legal Consultation</h1>
+    <p>Fill out the form and we’ll get in touch within 24–48 hours to confirm your booking.</p>
   </section>
 
-  <section class="services-preview">
+  <section class="services-preview form-section">
     <form action="#" method="post" class="booking-form">
-      <label for="name">Full Name:</label><br />
-      <input type="text" id="name" name="name" required /><br />
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
 
-      <label for="email">Email Address:</label><br />
-      <input type="email" id="email" name="email" required /><br />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
 
-      <label for="date">Preferred Date:</label><br />
-      <input type="date" id="date" name="date" /><br />
+      <label for="date">Preferred Consultation Date:</label>
+      <input type="date" id="date" name="date" />
 
-      <label for="message">Brief Description:</label><br />
-      <textarea id="message" name="message" rows="4" required></textarea><br />
+      <label for="message">Describe Your Issue Briefly:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Example: I was denied SSI benefits..." required></textarea>
 
-      <button type="submit" class="cta-button">Request Appointment</button>
+      <button type="submit" class="cta-button">Submit Request</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Citizens' Legal Support | Justice. Access. Empowerment.</p>
+    <p>&copy; 2025 Citizens' Legal Support | Schedule Today. Get Help Tomorrow.</p>
   </footer>
 
 </body>
